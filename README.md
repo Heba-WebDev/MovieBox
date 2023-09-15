@@ -29,6 +29,7 @@ Here are some of the main features of the app:
 ## Known Issues
 
 - Fetching and showing images of the movie in the dynamic route corresponding to it has yet to be fully implemented.
+- The movies/id route doesn't have a dedicated loading component.
 - There is no functional navbar on small screens.
 - The navbar on medium and large screens on the movie dynamic page has non-functional links for routes that have yet to be implemented.
 
