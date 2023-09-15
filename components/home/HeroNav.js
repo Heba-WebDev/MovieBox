@@ -7,8 +7,9 @@ export default function HeroNav() {
         <Image
           src="/images/globals/Logo.svg"
           alt="logo"
-          width={135}
+          width={128}
           height={35}
+          style={{ width: "133px" }}
         />
       </Link>
       <form className="hidden md:block">
@@ -28,6 +29,7 @@ export default function HeroNav() {
             width={15}
             height={30}
             className="absolute top-[33%] right-3 opacity-[0.7]"
+            style={{ width: "auto" }}
           />
         </div>
       </form>
@@ -39,13 +41,15 @@ export default function HeroNav() {
           width={15}
           height={10}
           className="block md:hidden"
+          style={{ width: "auto" }}
         />
-        <button>Sign in</button>
+        <button className="hidden md:block">Sign in</button>
         <Image
           src="/images/home/hamburger.svg"
           alt="open menu"
-          width={34}
+          width={32}
           height={35}
+          style={{ width: "auto" }}
         />
       </div>
     </nav>
