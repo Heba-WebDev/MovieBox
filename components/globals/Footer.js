@@ -4,13 +4,14 @@ export default function Footer() {
   const today = new Date();
   return (
     <footer className="container-custom py-[4rem] grid justify-center gap-7">
-      <div className="flex gap-12 justify-center">
+      <div className="flex gap-10 md:gap-12 justify-center">
         <Link href="/">
           <Image
             src="/images/globals/facebook.svg"
             alt="facebook"
             width={25}
             height={15}
+            style={{ width: 30, height: 20 }}
           />
         </Link>
         <Link href="/">
@@ -19,6 +20,7 @@ export default function Footer() {
             alt="instagram"
             width={25}
             height={15}
+            style={{ width: 30, height: 20 }}
           />
         </Link>
         <Link href="/">
@@ -27,6 +29,7 @@ export default function Footer() {
             alt="twitter"
             width={25}
             height={15}
+            style={{ width: 30, height: 20 }}
           />
         </Link>
         <Link href="/">
@@ -35,15 +38,22 @@ export default function Footer() {
             alt="youtube"
             width={25}
             height={15}
+            style={{ width: 30, height: 20 }}
           />
         </Link>
       </div>
       <div className="flex flex-col m-auto md:m-0 gap-4 font-semibold text-sm justify-center md:flex-row text-center">
-        <Link href="">Conditions of Use</Link>
+        <Link href="" className="hover:text-red-500">
+          Conditions of Use
+        </Link>
 
-        <Link href="">Privacy & Policy</Link>
+        <Link href="" className="hover:text-red-500">
+          Privacy & Policy
+        </Link>
 
-        <Link href="">Press Room</Link>
+        <Link href="" className="hover:text-red-500">
+          Press Room
+        </Link>
       </div>
       <div className="flex flex-col justify-center gap-3">
         <Link
